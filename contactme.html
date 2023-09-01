@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+    <style>
+        :root {
+            --bright-red: red;
+            --red: #CF291D;
+            --grey: #BFBFBF;
+            --dark-grey: #343235;
+            --white: #ECECEC;
+            --black: #1D1D1D;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* back-arrow */
+        .back a{
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--white);
+            font-size: 18px;
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+        }
+        .back a:hover {
+            color: var(--grey);
+            padding: 0.4rem 1rem;
+        }
+
+        /* conatiner */
+        .container {
+            padding: 1rem;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        /* card */
+        .card {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            background-color: var(--dark-grey);
+            border-radius: 10px;
+        }
+        .card .content {
+            margin-right: 3rem;
+            margin-left: 3rem;
+        }
+
+        /* h2-underline */
+        .h-page h2 {
+            font-size: 34px;
+            position: relative;
+        }
+        .h-page h2:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100%;
+            height: 15px;
+            transform: skew(-12deg) translateX(-50%);
+            background: rgba(255, 0, 0, 0.255);
+            z-index: 1;
+        }
+
+        /* map */
+        .card .mapouter iframe {     
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px; 
+            max-width: 300px;
+            max-height: auto;
+            float: left;
+        }
+
+        /* form */
+        .content form input {
+            color: var(--white);
+            padding: 0.2rem 0rem;
+            border: none;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--white);
+            background-color: transparent;
+        }
+        .content form .input-name {
+            font-size: 16px;
+        }
+        .content form button {
+            font-weight: bold;
+            color: var(--white);
+            border: 2px solid var(--red);
+            padding: 0.3rem 2rem;
+            background-color: var(--red);
+        }
+        .content form button:hover {
+            background-color: transparent;
+        }
+
+        @media (max-width: 635px) {
+            .card {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .card .mapouter iframe {
+                width: 100%;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 10px;
+            }
+            .container {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 435px) {
+            .back a {
+                font-size: 18px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<main>
+    <div class="back"><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back</a></div>
+    <div class="container">
+        <div class="card">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Gampola Sri Lanka&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            <div class="content">
+                <div class="h-page">
+                    <h2>Contact Me</h2>
+                </div>
+                <p>
+                <form action="https://formsubmit.co/shafninasar50@gmail.com" method="POST">
+                    <div class="input-name">Name *</div> 
+                    <input type="text" name="name" required>
+                    <div class="input-name">Email *</div>
+                    <input type="email" name="email" required><br>
+                    <button type="submit">Send</button>
+                </form>
+                </p>
+            </div> 
+        </div>  
+</main>
+    <!-- fontawesome-link -->
+    <script src="https://kit.fontawesome.com/120c9fdda7.js" crossorigin="anonymous"></script>
+    <!-- boostrap-js-jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
