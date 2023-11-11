@@ -140,7 +140,6 @@ nav button:hover {
 section {
     height: 100vh;
 }
-
 /* Pages Heading*/
 .h-page h2 {
     margin-top: 5rem;
@@ -368,4 +367,29 @@ footer button:hover {
     footer button {
         font-size: 11px;
     }
+}
+
+/* new portfolio update */
+.wrapper {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 10, 10, 0.568);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.wrapper div {
+    padding: 40px;
+    border: 1.5px solid red;
+}
+.wrapper p {
+    margin: 0;
+    font-size: 24px;
+}
+.wrapper button {
+    background-color: #fafafa;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
 }
