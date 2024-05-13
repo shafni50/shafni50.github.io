@@ -558,6 +558,7 @@ footer .rights a:hover {
 #contact-me button {
     margin: 0.5rem;
     float: left;
+    padding: 0;
 }
 #contact-me button:hover {
     color: var(--white);
@@ -582,5 +583,8 @@ footer .rights a:hover {
     }
     #contact-me textarea {
         width: 100%; 
+    }
+    #contact-me button {
+        padding: 0.8rem 2.5em;
     }
 }
